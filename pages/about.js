@@ -6,7 +6,9 @@ const about = () => {
     <>
       <div className="flex m-[2.5rem] py-[7rem] justify-evenly items-center w-full h-full max-lg:flex-col">
         <div className="w-1/3 max-lg:w-2/3 max-sm:w-[75%]">
-          <h1 className="text-[4rem] mb-5">I'm Michael, a web developer.</h1>
+          <h1 className="text-[4rem] mb-5">
+            I&#39;m Michael, a web developer.
+          </h1>
           <p className="text-[1.5rem] mb-[1rem]">
             My passion is web development. I strive to keep learning in this
             ever-changing industry. Everyday, I push myself to keep improving.
@@ -21,12 +23,12 @@ const about = () => {
           </p>
           <h2 className="text-[2.5rem] mb-5">Hobbies</h2>
           <p className="text-[1.5rem] mb-[1rem]">
-            If I'm not learning about web development, I'm learning about game
-            development. Another goal of mine is to make a small indie game with
-            Unreal Engine 5 or Unity. I am an avid PC gamer who really enjoys
-            all types of games and always had an interest in learning game
-            programming and design! If you made it this far and enjoyed my
-            website, I would love to hear from you!
+            If I&#39;m not learning about web development, I&#39;m learning
+            about game development. Another goal of mine is to make a small
+            indie game with Unreal Engine 5 or Unity. I am an avid PC gamer who
+            really enjoys all types of games and always had an interest in
+            learning game programming and design! If you made it this far and
+            enjoyed my website, I would love to hear from you!
           </p>
         </div>
         <div className="max-sm:w-[75%]">
