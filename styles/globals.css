@@ -1,26 +1,113 @@
-html,
-body {
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: "droid_serifbold";
+  src: url("../utility/assets/droidserif-bold-webfont.woff2") format("woff2"),
+    url("../utility/assets/droidserif-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "droid_serifbold_italic";
+  src: url("../utility/assets/droidserif-bolditalic-webfont.woff2")
+      format("woff2"),
+    url("../utility/assets/droidserif-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "droid_serifitalic";
+  src: url("../utility/assets/droidserif-italic-webfont.woff2") format("woff2"),
+    url("../utility/assets/droidserif-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "droid_serifregular";
+  src: url("../utility/assets/droidserif-regular-webfont.woff2") format("woff2"),
+    url("../utility/assets/droidserif-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+  padding: 0;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+html {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "droid_serifbold";
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  line-height: 175%;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.active {
+  border-bottom: 3px solid tomato;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+.navbar,
+footer {
+  font-family: "droid_serifbold";
+  font-size: 1.5rem;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover !important;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    url(/sun-tornado.svg) no-repeat center center scroll;
 }
