@@ -19,16 +19,18 @@ const about = () => {
             I chose React because it has a great ecosystem and a lot of
             community development. However, I still have aspirations of learning
             Vue and Angular frameworks as well as a plethora of other tech
-            applications in the future.
+            applications.
           </p>
           <h2 className="text-[2.5rem] mb-5">Hobbies</h2>
           <p className="text-[1.5rem] mb-[1rem]">
-            If I&#39;m not learning about web development, I&#39;m learning
-            about game development. Another goal of mine is to make a small
-            indie game with Unreal Engine 5 or Unity. I am an avid PC gamer who
-            really enjoys all types of games and always had an interest in
-            learning game programming and design! If you made it this far and
-            enjoyed my website, I would love to hear from you!
+            If I&#39;m not learning about the web, I&#39;m learning about game
+            development. Another goal of mine is to make a small indie game with
+            Unreal Engine 5 or Unity. I am an avid PC gamer who really enjoys
+            all types of games and always had an interest in learning game
+            programming and design!
+          </p>
+          <p className="text-[1.5rem] mb-[1rem]">
+            Hope you enjoyed my website, I would love to hear from you!
           </p>
         </div>
         <div className="max-sm:w-[75%]">

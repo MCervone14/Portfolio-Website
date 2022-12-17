@@ -8,7 +8,7 @@ const Project = () => {
       <div className="mx-auto w-1/2 flex justify-end max-[960px]:flex-col max-[960px]:w-[100%] max-[960px]:gap-10 max-[960px]:items-center gap-[14rem] mb-[3rem]">
         <div className="flex flex-col mr-1 gap-3 text-[2rem] max-[960px]:flex relative">
           <Image
-            src="/earth64.png"
+            src="/icons/earth64.png"
             width={64}
             height={64}
             className="absolute top-0 left-[-37%]"
@@ -29,11 +29,12 @@ const Project = () => {
             >
               View Project{" "}
               <Image
-                src="/right-arrow.svg"
+                src="/icons/right-arrow.svg"
                 width={33}
                 height={33}
                 alt="Right Arrow Icon made by Kiran Shastry on Iconscout.com"
                 class="tipper"
+                id="project"
               />{" "}
             </Link>
             <Link
@@ -43,7 +44,7 @@ const Project = () => {
             >
               View Github
               <Image
-                src="/right-arrow.svg"
+                src="/icons/right-arrow.svg"
                 width={33}
                 height={33}
                 alt="Right Arrow Icon made by Kiran Shastry on Iconscout.com"
@@ -57,8 +58,6 @@ const Project = () => {
         alt="Our Planet Earth website"
         width={900}
         height={450}
-        id="project"
-        objectFit="cover"
         className="w-[900px] mx-auto rounded-lg border-8 border-[black]"
       />
     </div>
