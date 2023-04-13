@@ -1,13 +1,11 @@
-import Head from "next/head";
 import HeroSection from "../components/HeroSection";
-import Project from "../components/Project";
-import Footer from "../components/Footer";
+import ProjectSection from "../components/ProjectSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <Project />
+      <ProjectSection />
     </>
   );
 }

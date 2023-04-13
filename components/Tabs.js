@@ -2,17 +2,47 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook, faSchool } from "@fortawesome/free-solid-svg-icons";
 import {
-  faAngular,
   faCss3Alt,
-  faFigma,
   faGitAlt,
   faGithub,
   faHtml5,
   faJs,
   faReact,
-  faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import TabItem from "./TabItem";
+
+const skillIcons = [
+  { icon: faGitAlt, name: "Git", styles: "" },
+  { icon: faGithub, name: "Github", styles: "" },
+  { icon: faHtml5, name: "HTML5", styles: "text-[orange]" },
+  { icon: faCss3Alt, name: "CSS3", styles: "text-[#264de4]" },
+  { icon: faJs, name: "JavaScript", styles: "text-[yellow]" },
+  { icon: faReact, name: "React", styles: "text-[#61DBFB]" },
+];
+
+const skillImages = [
+  {
+    icon: "/icons/typescript.svg",
+    name: "TypeScript",
+    credit: "TypeScript Brand Logo",
+  },
+  {
+    icon: "/icons/nextjs.svg",
+    name: "Next.js v13",
+    credit: "Next.js Brand Logo",
+  },
+  {
+    icon: "/icons/tailwind.svg",
+    name: "Tailwind",
+    credit: "Tailwind Brand Logo",
+  },
+  {
+    icon: "/icons/responsive.png",
+    name: "Responsive UX/UI",
+    credit: "Responsive Icon - Internet icons created by Freepik - Flaticon",
+  },
+];
 
 const Tabs = ({ color }) => {
   const [openTab, setOpenTab] = React.useState(1);
@@ -35,7 +65,13 @@ const Tabs = ({ color }) => {
                 href="#link1"
                 role="tablist"
               >
-                <FontAwesomeIcon icon={faBook}></FontAwesomeIcon> Skills
+                <div className="effect-shine">
+                  <FontAwesomeIcon
+                    icon={faBook}
+                    className="pr-2"
+                  ></FontAwesomeIcon>
+                  Skills
+                </div>
               </a>
             </li>
             <li className="flex-auto text-center">
@@ -49,8 +85,10 @@ const Tabs = ({ color }) => {
                 href="#link2"
                 role="tablist"
               >
-                <FontAwesomeIcon icon={faSchool} className="pr-2" />
-                Currently Learning
+                <span className="effect-shine">
+                  <FontAwesomeIcon icon={faSchool} className="pr-2" />
+                  Currently Learning
+                </span>
               </a>
             </li>
           </ul>
@@ -59,90 +97,29 @@ const Tabs = ({ color }) => {
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                   <ul className="p-5 mx-auto w-full h-[425px] rounded-lg bg-accent text-secondary">
-                    <li>
-                      <FontAwesomeIcon
-                        icon={faGitAlt}
-                        className="text-primary icon"
-                      />
-                      Git /
-                      <FontAwesomeIcon
-                        icon={faGithub}
-                        className="text-primary  icon ml-3"
-                      />
-                      Github
-                    </li>
-                    <li>
-                      <FontAwesomeIcon
-                        icon={faHtml5}
-                        className="text-[orange] icon"
-                      />
-                      HTML5
-                    </li>
-                    <li>
-                      <FontAwesomeIcon
-                        icon={faCss3Alt}
-                        className="text-[#264de4] icon"
-                      />
-                      CSS
-                    </li>
-                    <li>
-                      <FontAwesomeIcon
-                        icon={faJs}
-                        className="text-[yellow] icon"
-                      />
-                      Javascript
-                    </li>
-                    <li>
-                      <FontAwesomeIcon
-                        icon={faReact}
-                        className="text-[#61DBFB] icon"
-                      />
-                      React
-                    </li>
-                    <li className="relative">
-                      <Image
-                        src="/icons/nextjs.svg"
-                        width={20}
-                        height={20}
-                        className="inline-block icon"
-                        alt="Next.js Brand Icon"
-                      />
-                      Next.js
-                    </li>
-                    <li>
-                      <Image
-                        src="/icons/tailwind.svg"
-                        width={20}
-                        height={20}
-                        className="inline-block icon"
-                        alt="Tailwind Css Icon"
-                      />
-                      Tailwind
-                    </li>
-                    <li>
-                      <Image
-                        src="/icons/responsive.png"
-                        width={20}
-                        height={20}
-                        className="inline-block icon"
-                        alt="Responsive Icon - Internet icons created by Freepik - Flaticon"
-                      />
-                      Responsive Design
-                    </li>
+                    {skillIcons.map((skill, index) => (
+                      <li key={index}>
+                        <TabItem icon={skill.icon} styles={skill.styles}>
+                          {skill.name}
+                        </TabItem>
+                      </li>
+                    ))}
+                    {skillImages.map((skill, index) => (
+                      <li className="relative" key={index}>
+                        <Image
+                          src={skill.icon}
+                          width={20}
+                          height={20}
+                          className="inline-block icon"
+                          alt={skill.credit}
+                        />
+                        {skill.name}
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <ul className="p-5 mx-auto w-full h-[425px]">
-                    <li>
-                      <Image
-                        src="/icons/typescript.svg"
-                        width={20}
-                        height={20}
-                        className="inline-block icon"
-                        alt="Typescript Brand Icon"
-                      />
-                      Typescript
-                    </li>
                     <li>
                       <Image
                         src="/icons/redux.svg"

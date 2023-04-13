@@ -18,8 +18,8 @@ const about = () => {
           <p className="text-[1.5rem] mb-[1rem]">
             I chose React because it has a great ecosystem and a lot of
             community development. However, I still have aspirations of learning
-            Vue and Angular frameworks as well as a plethora of other tech
-            applications.
+            Vue and Angular frameworks as well as a plethora of other software
+            technologies.
           </p>
           <h2 className="text-[2.5rem] mb-5">Hobbies</h2>
           <p className="text-[1.5rem] mb-[1rem]">

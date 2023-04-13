@@ -65,6 +65,8 @@ h1 {
 h2 {
   font-family: "droid_serifbold";
   font-size: 2.5rem;
+  color: black;
+  opacity: 0.8;
 }
 
 h3 {
@@ -81,12 +83,6 @@ ul li {
   font-size: 2rem;
   font-weight: bold;
 }
-
-/* .active {
-  border-bottom: 3px solid tomato;
-  padding-bottom: 3px;
-  text-align: center;
-} */
 
 .selected {
   color: rgba(0, 0, 0, 0.65);
@@ -112,6 +108,19 @@ footer {
   text-align: center;
   width: 100%;
   overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
+.backgroundHero {
   background-size: cover !important;
   background: radial-gradient(
       ellipse at center,
@@ -119,5 +128,63 @@ footer {
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url(/sun-tornado.svg) no-repeat center center scroll;
+    url(/sun-tornado.svg) no-repeat center scroll;
+}
+
+a.effect-box:after,
+a.effect-box:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-box:before {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+.effect-box:after {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.effect-box:hover:after,
+.effect-box:hover:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* effect-shine */
+.effect-shine:hover {
+  color: blueviolet;
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(71, 9, 9, 0.6) 30%,
+    #000 50%,
+    rgba(4, 12, 3, 0.6) 100%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
 }

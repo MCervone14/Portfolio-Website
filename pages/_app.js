@@ -1,13 +1,12 @@
 import "../styles/globals.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-config.autoAddCss = false;
-import Layout from "../components/Layout";
 import Head from "next/head";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <div>
       <Head>
         <meta
           name="viewport"
@@ -15,8 +14,10 @@ function MyApp({ Component, pageProps }) {
           lang="en"
         />
       </Head>
+      <NavBar />
       <Component {...pageProps} />
-    </Layout>
+      <Footer />
+    </div>
   );
 }
 
