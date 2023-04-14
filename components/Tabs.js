@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import TabItem from "./TabItem";
 
-const skillIcons = [
+export const skillIcons = [
   { icon: faGitAlt, name: "Git", styles: "" },
   { icon: faGithub, name: "Github", styles: "" },
   { icon: faHtml5, name: "HTML5", styles: "text-[orange]" },
@@ -21,7 +21,7 @@ const skillIcons = [
   { icon: faReact, name: "React", styles: "text-[#61DBFB]" },
 ];
 
-const skillImages = [
+export const skillImages = [
   {
     icon: "/icons/typescript.svg",
     name: "TypeScript",

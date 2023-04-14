@@ -4,7 +4,7 @@ import Tabs from "../components/Tabs";
 const about = () => {
   return (
     <>
-      <div className="flex m-[2.5rem] py-[7rem] justify-evenly items-center w-full h-full max-lg:flex-col">
+      <div className="flex lg:m-[2.5rem] py-[7rem] justify-evenly items-center w-full h-full max-lg:flex-col">
         <div className="w-1/3 max-lg:w-2/3 max-sm:w-[75%]">
           <h1 className="text-[4rem] mb-5">
             I&#39;m Michael, a web developer.

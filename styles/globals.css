@@ -188,3 +188,11 @@ a.effect-box:before {
     -webkit-mask-position: -50%;
   }
 }
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
