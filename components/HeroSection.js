@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-auto pt-[3rem] flex justify-center items-center background mb-[3rem] border-b-[3px] border-accent bg-lightPrimary">
+    <div className="w-full h-auto flex justify-center items-center background mb-[3rem] border-b-[3px] border-accent bg-lightPrimary py-[6rem]">
       <div className="text-center mb-[1rem] relative">
         <span className="text-[2rem] font-bold text-secondary absolute top-0 left-[6%]">
           Hello, I&#39;m
