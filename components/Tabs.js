@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBook, faSchool } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faSchool, faDisplay } from "@fortawesome/free-solid-svg-icons";
 import {
   faCss3Alt,
   faGitAlt,
@@ -13,8 +13,8 @@ import Image from "next/image";
 import TabItem from "./TabItem";
 
 export const skillIcons = [
-  { icon: faGitAlt, name: "Git", styles: "" },
-  { icon: faGithub, name: "Github", styles: "" },
+  { icon: faGitAlt, name: "Git", styles: "text-[#000]" },
+  { icon: faGithub, name: "Github", styles: "text-[#000]" },
   { icon: faHtml5, name: "HTML5", styles: "text-[orange]" },
   { icon: faCss3Alt, name: "CSS3", styles: "text-[#264de4]" },
   { icon: faJs, name: "JavaScript", styles: "text-[yellow]" },
@@ -37,11 +37,6 @@ export const skillImages = [
     name: "Tailwind",
     credit: "Tailwind Brand Logo",
   },
-  {
-    icon: "/icons/responsive.png",
-    name: "Responsive UX/UI",
-    credit: "Responsive Icon - Internet icons created by Freepik - Flaticon",
-  },
 ];
 
 const Tabs = ({ color }) => {
@@ -56,7 +51,7 @@ const Tabs = ({ color }) => {
           >
             <li className="flex-auto text-center">
               <a
-                className="text-[2rem] mb-2 font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-accent text-secondary hover:text-primary focus:text-primary"
+                className="text-[2rem] mb-2 font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-accent text-primary hover:text-secondary"
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(1);
@@ -65,7 +60,7 @@ const Tabs = ({ color }) => {
                 href="#link1"
                 role="tablist"
               >
-                <div className="effect-shine">
+                <div>
                   <FontAwesomeIcon
                     icon={faBook}
                     className="pr-2"
@@ -76,7 +71,7 @@ const Tabs = ({ color }) => {
             </li>
             <li className="flex-auto text-center">
               <a
-                className="text-[2rem] ml-2 font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-accent text-secondary hover:text-primary focus:text-primary max-sm:mr-0"
+                className="text-[2rem] ml-2 font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal bg-accent text-primary hover:text-secondary max-sm:mr-0"
                 onClick={(e) => {
                   e.preventDefault();
                   setOpenTab(2);
@@ -85,18 +80,18 @@ const Tabs = ({ color }) => {
                 href="#link2"
                 role="tablist"
               >
-                <span className="effect-shine">
+                <span>
                   <FontAwesomeIcon icon={faSchool} className="pr-2" />
-                  Currently Learning
+                  Learning
                 </span>
               </a>
             </li>
           </ul>
           <div className="relative flex flex-col py-3 min-w-0 break-words bg-white w-full mb-6 rounded">
-            <div className="px-4 py-5 flex-auto  bg-accent text-secondary rounded-lg">
+            <div className="px-5 py-5 flex-auto  bg-accent text-secondary rounded-lg">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <ul className="p-5 mx-auto w-full h-[425px] rounded-lg bg-accent text-secondary">
+                  <ul className="p-5 mx-auto w-full h-[425px] rounded-lg bg-accent text-primary flex flex-col justify-around">
                     {skillIcons.map((skill, index) => (
                       <li key={index}>
                         <TabItem icon={skill.icon} styles={skill.styles}>
@@ -119,7 +114,7 @@ const Tabs = ({ color }) => {
                   </ul>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <ul className="p-5 mx-auto w-full h-[425px]">
+                  <ul className="p-5 mx-auto w-full h-[425px] text-primary">
                     <li>
                       <Image
                         src="/icons/redux.svg"
