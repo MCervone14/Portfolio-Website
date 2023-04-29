@@ -11,7 +11,7 @@ const HeroSection = () => {
         <span className="text-[2rem] font-bold text-secondary absolute top-0 left-[6%]">
           Hello, I&#39;m
         </span>
-        <div className="flex flex-wrap gap-8 items-center justify-center">
+        <div className="flex flex-wrap gap-8 items-center justify-center pb-5">
           <h1 className="lg:text-[8rem] md:text-[6rem] sm:text-[4rem] px-4 font-bold text-secondary mb-8 pt-4 rounded-2xl max-[470px]:text-[6rem] ease-in duration-300">
             Michael Cervone
           </h1>
@@ -28,10 +28,9 @@ const HeroSection = () => {
         </h2>
       </div>
       <p className="text-center text-[2rem] text-secondary italic">
-        “Develop success from failures. Discouragement and failure are two of
-        the surest stepping stones to success.” —Dale Carnegie
+        “Develop success from failures.” — Dale Carnegie
       </p>
-      <div className="w-full">
+      <div className="w-full px-5">
         <ul className="flex flex-wrap gap-4 mt-20 w-full justify-around items-center pb-10">
           {skillIcons.map((skill, index) => (
             <motion.li
