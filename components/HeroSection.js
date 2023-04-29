@@ -6,21 +6,23 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-auto flex justify-center items-center background mb-[3rem] border-b-[3px] border-accent bg-lightPrimary py-[6rem]">
+    <div className="w-full h-auto flex justify-center items-center background mb-[3rem] border-b-[3px] border-accent bg-lightPrimary py-[10rem]">
       <div className="text-center mb-[1rem] relative">
         <span className="text-[2rem] font-bold text-secondary absolute top-0 left-[6%]">
           Hello, I&#39;m
         </span>
-        <h1 className=" flex flex-wrap gap-8 items-center justify-center lg:text-[8rem] md:text-[6rem] sm:text-[4rem] px-4 font-bold text-secondary mb-8 pt-4 rounded-2xl max-[470px]:text-[6rem] ease-in duration-300">
-          Michael Cervone
+        <div className="flex flex-wrap gap-8 items-center justify-center">
+          <h1 className="lg:text-[8rem] md:text-[6rem] sm:text-[4rem] px-4 font-bold text-secondary mb-8 pt-4 rounded-2xl max-[470px]:text-[6rem] ease-in duration-300">
+            Michael Cervone
+          </h1>
           <Image
             src="/me.jpg"
             alt="Developer Michael Cervone"
             width={150}
-            height={150}
-            className="rounded-full"
+            height={200}
+            className="rounded-full h-[140px] object-cover "
           />
-        </h1>
+        </div>
         <h2 className="text-center text-secondary text-[3.5rem]">
           Web Developer
         </h2>
@@ -41,6 +43,15 @@ const HeroSection = () => {
                 bottom: 50,
               }}
               key={index}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                damping: 5,
+                stiffness: 40,
+                restDelta: 0.001,
+                duration: 0.3,
+              }}
             >
               <FontAwesomeIcon
                 icon={skill.icon}
@@ -58,6 +69,15 @@ const HeroSection = () => {
                 bottom: 50,
               }}
               key={index}
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                damping: 5,
+                stiffness: 40,
+                restDelta: 0.001,
+                duration: 0.3,
+              }}
             >
               <Image
                 src={skill.icon}

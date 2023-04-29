@@ -6,7 +6,7 @@ const ProjectSection = () => {
   const [personalProjects, setPersonalProjects] = useState(projects);
 
   return (
-    <div className="">
+    <div className="py-[5rem]">
       <h2 className="text-[6rem] font-bold text-center text-primary">
         Projects
       </h2>
