@@ -1,5 +1,5 @@
 import React from "react";
-import Tabs from "../components/Tabs";
+import Sidebar from "../components/Sidebar";
 
 const about = () => {
   return (
@@ -33,8 +33,8 @@ const about = () => {
             Hope you enjoyed my website, I would love to hear from you!
           </p>
         </div>
-        <div className="max-sm:w-[75%]">
-          <Tabs />
+        <div className="max-sm:w-[75%] mt-10">
+          <Sidebar />
         </div>
       </div>
     </>

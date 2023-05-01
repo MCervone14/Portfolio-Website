@@ -21,23 +21,24 @@ const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
           {desc}
         </p>
         <div className="absolute bottom-0 left-0 p-10 flex gap-5">
-          <Link href={website} target="_blank" className="text-3xl">
-            <button className="bg-primary text-4xl border-2 text-secondary hover:border-accent hover:shadow-lg  py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg">
-              <FontAwesomeIcon
-                icon={faWindowMaximize}
-                className="mr-2  text-accent stroke-[#000] stroke-[20px]"
-              />
-              Website
-            </button>
+          <Link
+            href={website}
+            target="_blank"
+            className="bg-primary text-4xl border-2 text-secondary hover:border-[black] hover:shadow-lg  py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg"
+          >
+            <FontAwesomeIcon
+              icon={faWindowMaximize}
+              className="mr-2  text-accent"
+            />
+            Website
           </Link>
-          <Link href={code} target="_blank" className="text-3xl">
-            <button className="bg-primary text-4xl border-2 text-secondary hover:border-accent py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg">
-              <FontAwesomeIcon
-                icon={faCode}
-                className="mr-2 text-accent stroke-[#000] stroke-[20px]"
-              />
-              Code
-            </button>
+          <Link
+            href={code}
+            target="_blank"
+            className=" bg-primary text-4xl border-2 text-secondary hover:border-[black] py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg"
+          >
+            <FontAwesomeIcon icon={faCode} className="mr-2 text-accent" />
+            Code
           </Link>
         </div>
       </div>

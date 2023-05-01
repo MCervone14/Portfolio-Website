@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ProjectItem from "./ProjectItem";
 import { projects } from "../projectData";
 
@@ -6,8 +6,8 @@ const ProjectSection = () => {
   const [personalProjects, setPersonalProjects] = useState(projects);
 
   return (
-    <div className="py-[5rem]">
-      <h2 className="text-[6rem] font-bold text-center text-primary">
+    <div className="pb-10">
+      <h2 className="text-[6rem] font-bold px-10 text-[black]/90 border-b-gray border-b-2 w-[78%] mx-auto mb-20">
         Projects
       </h2>
       <div className="flex flex-wrap h-auto justify-center gap-[8rem] items-center lg:mx-[15rem] my-[4rem] mx-5">

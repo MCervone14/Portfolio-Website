@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <nav className="bg-primary text-secondary navbar border-b-[3px] border-accent py-10 z-0 w-full flex items-center justify-center uppercase font-[droid_serifbold]">
+    <nav className="bg-primary text-secondary navbar border-b-[3px] border-accent py-20 z-0 w-full flex items-center justify-center uppercase font-[droid_serifbold]">
       <div>
         <Link
           className="mx-7 effect-shine font-bold text-3xl hover:text-accent"
