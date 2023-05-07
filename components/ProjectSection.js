@@ -1,16 +1,17 @@
-import { useState } from "react";
-import ProjectItem from "./ProjectItem";
+import { useEffect, useState } from "react";
 import { projects } from "../projectData";
+import ProjectItem from "./ProjectItem";
 
 const ProjectSection = () => {
-  const [personalProjects, setPersonalProjects] = useState(projects);
+  const [personalProjects, setPersonalProjects] = useState([]);
+
+  useEffect(() => {
+    setPersonalProjects(projects);
+  }, []);
 
   return (
-    <div className="pb-10">
-      <h2 className="text-[6rem] font-bold px-10 text-[black]/90 border-b-gray border-b-2 w-[78%] mx-auto mb-20">
-        Projects
-      </h2>
-      <div className="flex flex-wrap h-auto justify-center gap-[8rem] items-center lg:mx-[15rem] my-[4rem] mx-5">
+    <div>
+      <div className="flex flex-wrap gap-8 justify-around items-center lg:mx-[15rem] my-[4rem] mx-5">
         {personalProjects.map((project) => (
           <div key={project.id}>
             <ProjectItem project={project} />

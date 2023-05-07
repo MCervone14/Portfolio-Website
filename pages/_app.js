@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="initial-scale=1.0, width=device-width"
           lang="en"
+          title="Portfolio"
         />
       </Head>
       <NavBar />

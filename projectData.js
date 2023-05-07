@@ -23,12 +23,4 @@ export const projects = [
     website: "https://rent-homes-website.vercel.app/",
     code: "https://github.com/MCervone14/airbnb-clone",
   },
-  // {
-  //   id: 3,
-  //   image: "/work-in-progress.png",
-  //   title: "Svelte Spotify Clone",
-  //   desc: "A Spotify clone using the framework SvelteKit. ",
-  //   website: "https://gamecenter-ecommerce.vercel.app",
-  //   code: "https://github.com/MCervone14/GameCenter-E-Commerce",
-  // },
 ];

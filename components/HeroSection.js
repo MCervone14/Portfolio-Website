@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-auto flex justify-center items-center background border-accent pb-10 pt-40">
-      <div className="text-center mb-[1rem] relative">
-        <span className="text-[2rem] font-bold text-[black]/90 absolute top-0 left-[6%]">
+    <div className="w-full h-auto flex background border-accent pb-10 pt-40">
+      <div className="mb-[1rem] relative">
+        <span className="text-[2rem] font-bold text-[black]/90 absolute top-0 left-10">
           Hello, I&#39;m
         </span>
-        <div className="flex flex-wrap gap-8 items-center justify-center pb-5">
-          <h1 className="lg:text-[10rem] md:text-[8rem] sm:text-[4rem] px-4 font-bold text-black mb-8 pt-4 rounded-2xl max-[470px]:text-[6rem] ease-in duration-300">
+        <div className="flex flex-wrap gap-8 pb-5 justify-center">
+          <h1 className="lg:text-[10rem] md:text-[8rem] sm:text-[4rem] px-4 font-bold text-black pt-6 rounded-2xl max-[470px]:text-[6rem] ease-in duration-300">
             Michael Cervone
           </h1>
           <Image
@@ -30,8 +30,8 @@ const HeroSection = () => {
       <p className="text-center text-[2rem] text-[black]/90 italic ">
         “Develop success from failures.” — Dale Carnegie
       </p>
-      <div className="mx-5 w-[70%]">
-        <ul className="flex flex-wrap gap-4 mt-20 w-full  justify-around items-center pb-10 mx-auto">
+      <div className="w-[70%] mx-auto">
+        <ul className="flex flex-wrap gap-4 w-full  justify-around items-center py-10 pb-0">
           {skillIcons.map((skill, index) => (
             <motion.li
               drag

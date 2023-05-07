@@ -5,19 +5,19 @@ import Link from "next/link";
 
 const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
   return (
-    <div className="rounded-xl bg-lightPrimary border-[#000] border-[2px] h-[600px] relative max-w-[600px]">
+    <div className="rounded-xl bg-lightPrimary border-[1px] border-lightPrimary h-[500px] max-w-[375px] relative">
       <div>
         <Image
           src={image}
           alt={title}
-          width={600}
-          height={600}
+          width={400}
+          height={450}
           className="rounded-lg rounded-b-none"
         />
       </div>
       <div className="">
         <h3 className="p-10 font-bold text-4xl text-secondary">{title}</h3>
-        <p className="px-10 py-3 whitespace-normal text-secondary text-3xl leading-10">
+        <p className="px-10  whitespace-normal text-secondary text-3xl leading-10">
           {desc}
         </p>
         <div className="absolute bottom-0 left-0 p-10 flex gap-5">
