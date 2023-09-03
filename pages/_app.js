@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
           title="Portfolio"
         />
         <title>Michael Cervone | Portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </div>

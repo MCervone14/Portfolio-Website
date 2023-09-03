@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: "/PCBOI2.png",
+    image: "/PCBOI.png",
     title: "PCBOI - A Website for PC Gamers",
     desc: "Next.js v13 with App directory, Tailwind, Prisma, Typescript, MongoDB, and a component library named ShadCN UI.",
     website: "https://pcboi.vercel.app",
