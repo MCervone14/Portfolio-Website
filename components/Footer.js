@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary w-full text-accent border-t-[3px] border-accent my-10 p-20 flex items-center justify-center uppercase font-[droid_serifbold]">
+    <footer className=" bg-primary w-full text-accent border-t-[3px] border-accent mt-10 p-20 flex items-center justify-center uppercase font-[droid_serifbold]">
       <div className="flex flex-wrap items-center gap-12 justify-center">
         <p className="uppercase font-bold text-[2rem]">Contact Information:</p>
         <Link
@@ -19,7 +19,7 @@ const Footer = () => {
           />
         </Link>
         <Link
-          href="./MGC_Resume_2023.pdf"
+          href="./MGC_Resume_09_2023.pdf"
           target="_blank"
           className="text-3xl font-bold border-2 hover:border-[black] text-secondary px-5 py-2 rounded-xl flex items-center gap-3 bg-lightPrimary"
         >

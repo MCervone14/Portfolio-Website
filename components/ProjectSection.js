@@ -11,9 +11,9 @@ const ProjectSection = () => {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-8 justify-around items-center lg:mx-[15rem] my-[4rem] mx-5">
+      <div className="flex flex-wrap gap-5 justify-center">
         {personalProjects.map((project) => (
-          <div key={project.id}>
+          <div key={project.id} className="mx-auto p-5">
             <ProjectItem project={project} />
           </div>
         ))}

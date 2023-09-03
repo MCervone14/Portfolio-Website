@@ -1,12 +1,10 @@
 import "../styles/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div className="h-screen w-screen">
       <Head>
         <meta
           name="viewport"
@@ -14,10 +12,9 @@ function MyApp({ Component, pageProps }) {
           lang="en"
           title="Portfolio"
         />
+        <title>Michael Cervone | Portfolio</title>
       </Head>
-      <NavBar />
       <Component {...pageProps} />
-      <Footer />
     </div>
   );
 }

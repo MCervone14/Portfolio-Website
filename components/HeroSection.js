@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-auto flex background border-accent pb-10 pt-40">
+    <div className="w-full flex background border-accent pb-10 pt-40">
       <div className="mb-[1rem] relative">
         <span className="text-[2rem] font-bold text-[black]/90 absolute top-0 left-10">
           Hello, I&#39;m
@@ -30,7 +30,7 @@ const HeroSection = () => {
       <p className="text-center text-[2rem] text-[black]/90 italic ">
         “Develop success from failures.” — Dale Carnegie
       </p>
-      <div className="w-[70%] mx-auto">
+      <div className="w-[70%] mx-auto my-20">
         <ul className="flex flex-wrap gap-4 w-full  justify-around items-center py-10 pb-0">
           {skillIcons.map((skill, index) => (
             <motion.li

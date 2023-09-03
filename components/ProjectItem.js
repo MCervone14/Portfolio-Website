@@ -10,9 +10,9 @@ const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
         <Image
           src={image}
           alt={title}
-          width={400}
-          height={450}
-          className="rounded-lg rounded-b-none"
+          width={375}
+          height={275}
+          className="rounded-lg rounded-b-none object-cover min-h-[200px]"
         />
       </div>
       <div className="">
@@ -20,7 +20,7 @@ const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
         <p className="px-10  whitespace-normal text-secondary text-3xl leading-10">
           {desc}
         </p>
-        <div className="absolute bottom-0 left-0 p-10 flex gap-5">
+        <div className="absolute p-2 flex gap-5 bottom-3 left-3 ">
           <Link
             href={website}
             target="_blank"
@@ -32,14 +32,23 @@ const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
             />
             Website
           </Link>
-          <Link
-            href={code}
-            target="_blank"
-            className=" bg-primary text-4xl border-2 text-secondary hover:border-[black] py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg"
-          >
-            <FontAwesomeIcon icon={faCode} className="mr-2 text-accent" />
-            Code
-          </Link>
+
+          {code !== "" ? (
+            <Link
+              href={code}
+              target="_blank"
+              className=" bg-primary text-4xl border-2 text-secondary hover:border-[black] py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg"
+            >
+              <FontAwesomeIcon icon={faCode} className="mr-2 text-accent" />
+              Code
+            </Link>
+          ) : (
+            <div>
+              <p className="absolute w-full bottom-0 text-right text-[#fff]">
+                *Code Available on Request
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

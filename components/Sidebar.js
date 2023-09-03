@@ -4,8 +4,8 @@ import TabItem from "./TabItem";
 
 const Sidebar = () => {
   return (
-    <div className="border-2 m-auto rounded-2xl w-[375px] h-auto bg-accent text-[black]">
-      <h3 className="p-10 font-bold text-4xl border-b-2">Skills</h3>
+    <div className="border-2 mx-auto rounded-2xl w-[320px] h-auto bg-accent text-[black]">
+      <h3 className="p-10 font-bold text-4xl border-b-2">Technology Skills</h3>
       <div>
         <ul className="p-10 mx-auto text-[black] flex flex-col gap-2 justify-center">
           {skillIcons.map((skill, index) => (
