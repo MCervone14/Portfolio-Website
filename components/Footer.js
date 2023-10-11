@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
       <div className="bg-slate-700 h-[65px] w-full flex justify-center items-center">
         <p className="text-center text-xl font-bold">
-          &copy; All Rights Reserved, Inc. {new Date().getFullYear()}
+          &copy; {new Date().getFullYear()} Michael Cervone
         </p>
       </div>
     </footer>
