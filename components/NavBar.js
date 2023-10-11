@@ -1,24 +1,41 @@
 import React from "react";
 import Link from "next/link";
+import Logo from "./Logo";
+import DropdownMenu from "./DropdownMenu";
+
+export const links = [
+  { href: "#", label: "Home" },
+  { href: "#projects", label: "Projects" },
+  { href: "#about", label: "About" },
+  { href: "#contact", label: "Contact" },
+];
 
 const NavBar = () => {
   return (
-    <nav className="bg-primary text-secondary navbar border-b-[3px] border-accent py-20 z-0 w-full flex items-center justify-center uppercase font-[droid_serifbold]">
-      <div>
-        <Link
-          className="mx-7 effect-shine font-bold text-3xl hover:text-accent"
-          href="/"
-        >
-          Home
-        </Link>
-        <Link
-          className="ml-7 font-bold text-3xl hover:text-accent"
-          href="/about"
-        >
-          About
-        </Link>
+    <nav className="bg-primary text-secondary navbar py-20 w-full flex items-center justify-around font-[droid_serifbold] ">
+      <div className="hidden md:block">
+        <Logo />
       </div>
-      <div></div>
+      <ul className="hidden md:flex flex-row justify-center items-center space-x-20">
+        {links.map(({ href, label }) => (
+          <li key={`${href}${label}`}>
+            <Link href={href} className="hover:text-accent">
+              {label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <div className="md:hidden">
+        <DropdownMenu links={links} />
+      </div>
+
+      <Link
+        href="./MGC_Resume_10_2023.pdf"
+        target="_blank"
+        className="bg-title hover:text-accent rounded-md text-2xl px-6 py-4"
+      >
+        Download CV
+      </Link>
     </nav>
   );
 };

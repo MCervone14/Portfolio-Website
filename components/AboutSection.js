@@ -1,13 +1,12 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
+import SkillsChart from "./SkillsChart";
 
 const about = () => {
   return (
-    <div className="w-full">
-      <div className="flex flex-col lg:flex-row justify-evenly my-20 gap-40 p-10">
-        <div className="flex flex-col">
-          <h2 className="text-5xl mb-5">A little bit about me</h2>
+    <section id="about">
+      <div className="flex flex-col lg:flex-row justify-center max-w-screen-2xl mx-auto">
+        <div className="flex flex-col px-5 w-full lg:w-1/2 mx-auto mb-10">
+          <h2 className="text-5xl mb-5 text-title">About Me</h2>
           <p className="text-3xl mb-4 leading-relaxed">
             My passion is web development. I strive to keep learning in this
             ever-changing industry. Everyday, I push myself to keep improving.
@@ -20,7 +19,7 @@ const about = () => {
             Vue and Angular frameworks as well as a plethora of other software
             technologies.
           </p>
-          <h2 className="text-5xl mb-5">Hobbies</h2>
+          <h2 className="text-5xl mb-5 text-title">Hobbies</h2>
           <p className="text-3xl mb-4 leading-relaxed">
             If I&#39;m not learning about the web, I&#39;m learning about game
             development. Another goal of mine is to make a small indie game with
@@ -34,12 +33,11 @@ const about = () => {
             you!
           </p>
         </div>
-        <div className="mx-auto">
-          <Sidebar />
+        <div className="lg:w-1/3 w-full px-5">
+          <SkillsChart />
         </div>
       </div>
-      <Footer />
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import AboutSection from "../components/AboutSection";
 
 export default function Home() {
   return (
-    <main className="max-w-[1640px] h-full mx-auto">
+    <main className="mx-auto">
       <HeroSection />
       <ProjectSection />
       <AboutSection />

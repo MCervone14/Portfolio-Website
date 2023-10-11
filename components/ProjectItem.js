@@ -5,14 +5,14 @@ import Link from "next/link";
 
 const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
   return (
-    <div className="rounded-xl bg-lightPrimary border-[1px] border-lightPrimary h-[500px] max-w-[375px] relative">
+    <div className="rounded-xl bg-slate-600 border-2 border-slate-800 h-[500px] max-w-[450px] relative">
       <div>
         <Image
           src={image}
           alt={title}
-          width={375}
+          width={450}
           height={275}
-          className="rounded-lg rounded-b-none object-cover min-h-[200px]"
+          className="rounded-lg rounded-b-none object-cover min-h-[225px]"
         />
       </div>
       <div className="">
@@ -24,7 +24,7 @@ const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
           <Link
             href={website}
             target="_blank"
-            className="bg-primary text-4xl border-2 text-secondary hover:border-[black] hover:shadow-lg  py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg"
+            className="bg-[#1C1E53] text-3xl text-secondary hover:text-accent px-4 py-2 rounded-lg flex items-center justify-around"
           >
             <FontAwesomeIcon
               icon={faWindowMaximize}
@@ -37,14 +37,14 @@ const ProjectItem = ({ project: { title, image, code, website, desc } }) => {
             <Link
               href={code}
               target="_blank"
-              className=" bg-primary text-4xl border-2 text-secondary hover:border-[black] py-3 px-5 rounded-xl flex items-center justify-ar gap-3 shadow-lg"
+              className=" bg-[#1C1E53] text-3xl text-secondary hover:text-accent px-4 py-2 rounded-lg flex items-center justify-around"
             >
               <FontAwesomeIcon icon={faCode} className="mr-2 text-accent" />
-              Code
+              Docs
             </Link>
           ) : (
             <div>
-              <p className="absolute w-full bottom-0 text-right text-[#fff]">
+              <p className="absolute w-full bottom-0 text-right text-white">
                 *Code Available on Request
               </p>
             </div>
