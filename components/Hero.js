@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import profilePic from "../public/MikeCPic2.png";
 
 const textVariants = {
   initial: {
@@ -97,9 +98,12 @@ const Hero = () => {
         <div className="flex-1 relative">
           <Image
             fill
-            src="/MikeCPic2.png"
+            src={profilePic}
             alt="Front-End Developer Michael Cervone"
             className="object-contain"
+            blurDataURL="../public/MikeCPic2.png"
+            placeholder="blur"
+            priority
           />
         </div>
       </div>
