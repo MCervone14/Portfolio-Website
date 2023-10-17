@@ -66,18 +66,22 @@ const Hero = () => {
               Front-End Developer
             </motion.p>
             <motion.div variants={textVariants} className="flex">
-              <motion.button
-                className="p-5 border-2 z-10 border-secondary rounded-xl bg-transparent text-secondary mr-5 cursor-pointer font-light hover:text-accent hover:border-accent"
-                variants={textVariants}
-              >
-                <Link href="#projects">See the Latest Works</Link>
-              </motion.button>
-              <motion.button
-                className="p-5 border-2 z-10 border-secondary rounded-xl bg-transparent text-secondary mr-5 cursor-pointer font-light hover:text-accent hover:border-accent"
-                variants={textVariants}
-              >
-                <Link href="#contact">Contact Me</Link>
-              </motion.button>
+              <Link href="#projects">
+                <motion.button
+                  className="p-5 border-2 z-10 border-secondary rounded-xl bg-transparent text-secondary mr-5 cursor-pointer font-light hover:text-accent hover:border-accent"
+                  variants={textVariants}
+                >
+                  See the Latest Works
+                </motion.button>
+              </Link>
+              <Link href="#contact">
+                <motion.button
+                  className="p-5 border-2 z-10 border-secondary rounded-xl bg-transparent text-secondary mr-5 cursor-pointer font-light hover:text-accent hover:border-accent"
+                  variants={textVariants}
+                >
+                  Contact Me
+                </motion.button>
+              </Link>
             </motion.div>
             <motion.div
               className="flex flex-wrap justify-center items-center font-bold bg-secondary w-fit px-3 py-5 rounded-xl"
