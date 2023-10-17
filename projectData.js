@@ -1,4 +1,4 @@
-export const projects = [
+export const projectData = [
   {
     id: 1,
     image: "/FullOurPlanetEarthPicture.png",
@@ -15,14 +15,6 @@ export const projects = [
     website: "https://pcboi.vercel.app",
     code: "https://github.com/MCervone14/PCBOI",
   },
-  // {
-  //   id: 3,
-  //   image: "/GameCenterPicture.png",
-  //   title: "GameCenter E-Commerce",
-  //   desc: "An E-Commerce website. Built with Next.js v13/NextAuth, Tailwind with DaisyUI, Prisma, Typescript, Zustand, Framer-Motion, and Stripe.",
-  //   website: "https://gamecenter-ecommerce.vercel.app",
-  //   code: "https://github.com/MCervone14/GameCenter-E-Commerce",
-  // },
   {
     id: 4,
     image: "/airbnb-clone.png",

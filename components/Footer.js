@@ -7,26 +7,21 @@ import { links } from "./NavBar";
 
 const Footer = () => {
   return (
-    <footer className=" bg-gray-400 text-accent border-t-[3px] border-accent mt-20 flex flex-col items-center justify-center uppercase font-[droid_serifbold]">
-      <div
-        className="flex flex-col items-center justify-center py-10"
-        id="contact"
-      >
+    <footer className="h-full bg-gray-400 text-accent border-t-2 border-accent mt-40 flex flex-col items-center justify-center uppercase font-[droid_serifbold]">
+      <div className="flex flex-col items-center justify-center py-10">
         <div className="py-10">
           <Logo />
         </div>
-        <div className="flex gap-10 py-10">
-          {links
-            .map((link) => (
-              <Link
-                className="text-xl text-slate-800 hover:text-accent"
-                href={link.href}
-                key={link.href}
-              >
-                {link.label}
-              </Link>
-            ))
-            .slice(0, 2)}
+        <div className="flex flex-wrap justify-center gap-10 py-10">
+          {links.map((link) => (
+            <Link
+              className="text-xl text-slate-800 hover:text-accent"
+              href={link.href}
+              key={link.href}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
         <div className="flex items-center justify-center gap-20">
           <Link href="https://github.com/MCervone14" aria-label="Github">

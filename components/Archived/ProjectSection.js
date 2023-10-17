@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { projects } from "../projectData";
-import ProjectItem from "./ProjectItem";
+import { projects } from "../../projectData";
+import ProjectItem from "../ProjectItem";
 
 const ProjectSection = () => {
   const [personalProjects, setPersonalProjects] = useState([]);

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { skillIcons, skillImages } from "./Helpers/Icons";
+import { skillIcons, skillImages } from "../Helpers/Icons";
 import TabItem from "./TabItem";
 
 const Sidebar = () => {

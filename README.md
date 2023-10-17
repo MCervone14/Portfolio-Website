@@ -10,7 +10,7 @@
 
 ## Overview
 
-![Portfolio](./public/portfolio.png)
+![Portfolio](./public/PortfolioPage.png)
 
 Link to website - [Portfolio](https://michaelcervone.com/)
 

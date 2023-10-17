@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { skillIcons, skillImages } from "./Helpers/Icons";
+import { skillIcons, skillImages } from "../Helpers/Icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HeroSection = () => {
