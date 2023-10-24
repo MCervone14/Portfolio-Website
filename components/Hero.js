@@ -44,8 +44,8 @@ const sliderVariants = {
 
 const Hero = () => {
   return (
-    <section>
-      <div className="h-full bg-primary flex flex-col lg:flex-row">
+    <section className="bg-primary">
+      <div className="h-full  flex flex-col lg:flex-row max-w-screen-2xl mx-auto">
         <div className="w-full h-full flex-1 flex justify-center md:max-w-screen-2xl">
           <motion.div
             className="flex flex-col justify-center items-center md:items-start text-secondary gap-10 py-5"
