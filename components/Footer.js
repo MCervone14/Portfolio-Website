@@ -30,11 +30,7 @@ const Footer = () => {
               className="fa-2x text-black hover:text-accent"
             />
           </Link>
-          <Link
-            href="./MGC_Resume_10_2023.pdf"
-            target="_blank"
-            aria-label="Resume"
-          >
+          <Link href="./CV_MCervone.pdf" target="_blank" aria-label="Resume">
             <FontAwesomeIcon
               icon={faFile}
               className="text-[2rem] fa-2x text-black hover:text-accent"

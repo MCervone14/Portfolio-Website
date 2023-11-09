@@ -30,7 +30,7 @@ const NavBar = () => {
       </div>
 
       <Link
-        href="./MGC_Resume_10_2023.pdf"
+        href="./CV_MCervone.pdf"
         target="_blank"
         className="bg-title hover:text-accent rounded-md text-lg px-6 py-4"
       >
