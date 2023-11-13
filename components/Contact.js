@@ -89,35 +89,64 @@ const Contact = () => {
             ref={formRef}
             onSubmit={sendEmail}
           >
-            <input
-              className="p-5 bg-transparent border-2 border-orange-500 rounded"
-              type="text"
-              required
-              placeholder="Name"
-              name="name"
-              value={inputs.name}
-              onChange={(e) => setInputs({ ...inputs, name: e.target.value })}
-            />
-            <input
-              className="p-5 bg-transparent border-2 border-orange-500 rounded"
-              type="text"
-              required
-              placeholder="Your Email"
-              name="email"
-              value={inputs.email}
-              onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
-            />
-            <textarea
-              className="p-5 bg-transparent border-2 border-orange-500 rounded"
-              required
-              rows={8}
-              placeholder="Message"
-              name="message"
-              value={inputs.message}
-              onChange={(e) =>
-                setInputs({ ...inputs, message: e.target.value })
-              }
-            />
+            <div className="flex items-center justify-between gap-[46px]">
+              <label
+                htmlFor="name"
+                className="font-bold text-xl text-slate-700"
+              >
+                Name:
+              </label>
+              <input
+                id="name"
+                className="p-5 bg-transparent border-2 border-orange-500 rounded flex-1"
+                type="text"
+                required
+                placeholder="E.g. Peyton Manning"
+                name="name"
+                value={inputs.name}
+                onChange={(e) => setInputs({ ...inputs, name: e.target.value })}
+              />
+            </div>
+            <div className="flex items-center gap-[50px]">
+              <label
+                htmlFor="email"
+                className="font-bold text-xl text-slate-700"
+              >
+                Email:
+              </label>
+              <input
+                id="email"
+                className="p-5 bg-transparent border-2 border-orange-500 rounded flex-1"
+                type="text"
+                required
+                placeholder="E.g. PManning@gmail.com"
+                name="email"
+                value={inputs.email}
+                onChange={(e) =>
+                  setInputs({ ...inputs, email: e.target.value })
+                }
+              />
+            </div>
+            <div className="flex items-center gap-5">
+              <label
+                htmlFor="message"
+                className="font-bold text-xl text-slate-700"
+              >
+                Message:
+              </label>
+              <textarea
+                id="message"
+                className="p-5 bg-transparent border-2 border-orange-500 rounded flex-1"
+                required
+                rows={8}
+                placeholder="Write your message here..."
+                name="message"
+                value={inputs.message}
+                onChange={(e) =>
+                  setInputs({ ...inputs, message: e.target.value })
+                }
+              />
+            </div>
             <button className="px-4 py-3 border-none w-[200px] mx-auto rounded bg-orange-500 cursor-pointer font-medium">
               Send
             </button>
